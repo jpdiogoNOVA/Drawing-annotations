@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spectrum Sample</title>
+    <script src='p5.min.js'></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="d-flex justify-content-end">
+        <div id="myCanvas">
+          <!-- canvas element will be added here -->
+        </div>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="imageDropdownLine" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Line Settings
+          </button>
+          <div id='dropdownLine' class="dropdown-menu" aria-labelledby="imageDropdownLine">
+            <div class="dropdown-row brush_row">
+              <img src="brush_imgs/marker.png" class="dropdown-image brush" alt="Marker">
+            </div>
+            <div class="dropdown-divider"></div>
+            <div class="dropdown-row brush_row">
+              <img src="brush_imgs/fountain_pen2.png" class="dropdown-image brush" alt="Fountain Pen">
+            </div>
+            <div class="dropdown-divider"></div>
+            <div class="dropdown-row brush_row">
+              <img src="brush_imgs/felt_tip_pen.png" class="dropdown-image brush" alt="Felt-tip Pen">
+            </div>
+            <div class="dropdown-divider"></div>
+            <div class="dropdown-row brush_row">
+              <img src="brush_imgs/spray_paint_can.png" class="dropdown-image brush" alt="Spray Paint">
+            </div>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Thin</a>
+            <a class="dropdown-item font-weight-bold" href="#">Normal</a>
+            <a class="dropdown-item" href="#">Thick</a>
+            <div class="dropdown-divider"></div>                               
+            <div class="dropdown-item">
+              <input type='checkbox' id='checkBoxLineDash'>
+              <label class="form-check-label" for="checkBoxLineDash">Dashed</label>
+            </div>
+            <div class="dropdown-item">
+              <input type='checkbox' id='checkBoxArrow' >
+              <label class="form-check-label" for="checkBoxArrow">Arrowed</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <script src='./extras/jquery-3.3.1.min.js'></script>
+      <script src='./extras/popper.min.js'></script>
+      <script src='./extras/bootstrap.min.js'></script>
+      <script src='main.js'></script>
+</body>
+</html>

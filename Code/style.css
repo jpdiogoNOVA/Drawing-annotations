@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.brush_row {
+    text-align: center;
+    padding: 10px 0;
+    
+}
+
+.brush_row:hover {
+    cursor: pointer;
+}
+
+.brush_selected {
+    text-align: left !important;
+}
+
+.brush {
+    max-width: 120px;
+}
